@@ -12,6 +12,10 @@ tags:
 - personal
 ---
 
+{{ page.title }}
+----------------
+----------------
+
 It's been a while since I wrote in my [blog](http://madhatter2theworld.blogspot.com/)... almost four years.
 
 

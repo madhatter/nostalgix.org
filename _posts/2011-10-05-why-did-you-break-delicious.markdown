@@ -20,6 +20,10 @@ tags:
 - web
 ---
 
+{{ page.title }}
+----------------
+----------------
+
 I have been using [delicious](http://delicious.com) since 2003. I have been early adopter and enjoying it from the very beginning. And while I already had some concerns when [Yahoo](http://www.yahoo.com) bought delicious in 2005, I stuck to the service as there was nothing else available that simple and fulfilling around.
 
 When I read that Yahoo planned to sell delicious again without putting to much effort in enhancements ever, I have been hoping that there _will_ be changes that _will_ get useful features for the users who stayed while lots of others seemed to have jumped on new services where you are able to store links for offline browsing with previews and categories depending on the content (images, videos, music files, documents, notes, ...).

@@ -15,6 +15,10 @@ tags:
 - ruby
 ---
 
+{{ page.title }}
+----------------
+----------------
+
 A team mate told me about [Heroku](http://heroku.com/) today, when I was bashing my buggy hosting.
 
 At the moment I am playing around with Ruby on Rails and I was looking forward to it for a while. This was the initial reason to change my hosting and move to a host who claimed to offer RoR services. But then I noticed that just deploying a very small project did not work too well.
@@ -46,7 +50,8 @@ This went well so far. But the final step did not work that well:
     
     $ heroku rake db:migrate
     rake aborted!
-    Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
+    Please install the postgresql adapter: `gem install 
+	activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
     
     Tasks: TOP => db:migrate => db:load_config
     (See full trace by running task with --trace)

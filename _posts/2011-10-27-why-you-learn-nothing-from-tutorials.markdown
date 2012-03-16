@@ -13,6 +13,10 @@ tags:
 - tutorial
 ---
 
+{{ page.title }}
+----------------
+----------------
+
 Maybe you do that: you want to learn something new and you are wondering where to start. Everything seems so strange and different. You are heading to Google and ask for a good tutorial to learn it by example. Of course you find lots of hits, because most people ask somewhere for a good tutorial to learn something new.
 
 But I am wondering: did you really learn something from a tutorial yet or do you just keep asking, hoping to find any good one day which will really help you get started?
