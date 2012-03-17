@@ -1,0 +1,48 @@
+---
+layout: post
+title: Changes
+tags:
+- blogging
+- personal
+- jekyll
+- ruby
+- hosting
+---
+
+{{ page.title }}
+----------------
+----------------
+
+Welcome to my new home. I moved. 
+
+Why? - I am working on a [little tool] [1], written in Ruby, to collect interesting
+articles on Twitter. To do so, I need to let the tool run on a server which is
+online 24/7. But when I tried to run my Ruby program at my old webspace hosters
+server I noticed that not only Ruby but the Rubygems where totally outdated.  I
+chose the hosting because it was a special Ruby and Rails hosting. Yeah, right.
+
+Here I have all my Ruby stuff installed by myself, so there will be everything
+I need. And while I am at it, I started to move this blog, too. I read
+[Blogging like a
+hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) a
+while ago and wanted to try [Jekyll](http://github.com/mojombo/jekyll) since.
+At the moment these pages look very much like those from Tom Preston-Werner. I
+used his public repository to start with Jekyll. To migrate my old Wordpress
+blog to Jekyll I used a nice tool written in Python called
+[exitwp](https://github.com/thomasf/exitwp). But I had to do some manual tweaks
+in the migrated markdown files, because I did not want to keep the old
+Wordpress categories.
+
+One feature I really liked about Jekyll (or maybe static page generators in
+general) is the ability to push a git repository to deploy your website on the
+server. I used the post-receive skript from the [wiki
+pages](https://github.com/mojombo/jekyll/wiki), but had to <code>source
+~/.bash_profile</code> to be able to use my Ruby and Gems installed via
+[RVM](https://rvm.beginrescueend.com/).
+
+So, right now, I have the basic functionality here. Now I can write posts (and
+I really hope, that I will do that more often) and create my own blog layout
+when I am in the mood (I don't like design, CSS and stuff like that very much).
+
+[1]: https://github.com/madhatter/tweetfeed "tweetfeed"
+
