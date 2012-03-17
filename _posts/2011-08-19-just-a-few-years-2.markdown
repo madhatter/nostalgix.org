@@ -5,8 +5,6 @@ slug: just-a-few-years-2
 status: publish
 title: Just a few years...
 wordpress_id: '14'
-categories:
-- Personal
 tags:
 - blogging
 - personal

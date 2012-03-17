@@ -5,8 +5,6 @@ slug: dont-look-back-in-anger
 status: publish
 title: Don't look back in anger¹
 wordpress_id: '62'
-categories:
-- WebServices
 ---
 
 {{ page.title }}

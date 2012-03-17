@@ -5,8 +5,6 @@ slug: deploy-to-heroku
 status: publish
 title: Deploy to Heroku
 wordpress_id: '32'
-categories:
-- Hacking
 tags:
 - deployment
 - github

@@ -5,8 +5,6 @@ slug: why-you-learn-nothing-from-tutorials
 status: publish
 title: Why you learn nothing from tutorials
 wordpress_id: '54'
-categories:
-- Hacking
 tags:
 - best_practice
 - rant

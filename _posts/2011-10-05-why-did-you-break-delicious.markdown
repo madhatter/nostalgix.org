@@ -5,8 +5,6 @@ slug: why-did-you-break-delicious
 status: publish
 title: Why did you break delicious?
 wordpress_id: '42'
-categories:
-- WebServices
 tags:
 - alternatives
 - blinklist
