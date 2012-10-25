@@ -28,16 +28,17 @@ full desktop environments like KDE and [Gnome](http://www.gnome.org/")[^2] I mor
 the Shell and the tools available for it. So when I opted out of college in 2003 I read my mails with 
 [mutt](http://www.mutt.org/), read the news with [tin](http://www.tin.org/), did some serious chatting with 
 [irssi](http://www.irssi.org/) and hacked code in [vim](http://www.vim.org/).
-My favorite windowmanager at that time has been [Openbox](http://openbox.org/), because it was incredibly fast. 
+My favorite windowmanager at that time was [Openbox](http://openbox.org/), because it was incredibly fast. 
 And it did what I needed it for:
 managing my program windows. I had Openbox configured to be fully controlable with the keyboard. I only touched the mouse 
-when I surfed on the net[^3].
+when I surfed the interwebs[^3].
 
 I started my new job as system administrator and software developer and still was hoping to be able to stick to my tools. 
-But they gave me an Apple PowerBook G3 ([Pismo](http://en.wikipedia.org/wiki/File:Powerbook_g3_pismo.jpg) and told me that 
+But they gave me an Apple PowerBook G3 ([Pismo](http://en.wikipedia.org/wiki/File:Powerbook_g3_pismo.jpg)) and told me that 
 everybody should use Mac OS X[^4] because of ease of use and compatibility.
 
-Compatibility ment, that I had to use Apple Mail for office mails and BBedit for my code. There was almost a new tool for
+Compatibility ment, that I had to use Apple Mail for office mails and [BBedit](http://www.barebones.com/products/bbedit/) for my code. 
+There was almost a new tool for
 everything. That was the reason I installed Openbox on the Mac and used it within the X11 environment for my private stuff.
 I now had two parallel systems on the Mac: the Mac OS X world and a world made up from tarballs and lots of compilation
 cycles. It was exhausting, but I tried as hard as possible to keep the tools I mastered over the years. 
@@ -46,12 +47,12 @@ But because I had to switch between OS X and X11 it did not feel right. And I di
 strategy I had chosen. I tried [Macports](http://www.macports.org) and [fink](http://www.finkproject.org/) to install 
 the necessary libraries for other things I wanted to install.
 It helped to speed up installations, but did not make it less complex to know later, what has been added to the system 
-by which method or tool. So I erased the whole disk on the Pismo and installed NetBSD[^5]. 
+by which method or tool. So I erased the whole disk on the Pismo and installed [NetBSD](http://www.netbsd.org/)[^5]. 
 
 I should have known the reaction of the management, when I came back to office showing around the result of the last
-weekend's work: nyet!
+weekend's work: _nyet!_
 
-I installed Mac OS X ("Panther" by that time) again and build vim from the sources. I resigned and from that day on 
+I installed Mac OS X ("Panther" by that time) again and build vim from the sources. I resigned and from that day on I
 primarily used what OS X had to offer.
 
 And I got used to it over the years.
@@ -63,12 +64,12 @@ Why did I spent my own money on Apple Hardware later?
 While working in my frist job I got some hardware upgrades over the years. The Powerbook Pismo was very slow with newer
 versions of Mac OS X, so I got the latest and fastest iBook. Which I really enjoyed: it was really fast (at that time)
 and the 12" version was very handy but still useable.[^6]
-When the iBook died I got a MacBook Pro. One of those than still looked like the late Powerbooks. I had left the Power-PC
+When the iBook died I got a MacBook Pro. One of those that still looked like the late Powerbooks. I had left the Power-PC
 behind me finally. And besides the benefits of being able to run virtual machines on my new hardware, I now was able to
 watch videos on YouTube, too.
 
 When I left the job I had to give the MacBook back. In the last 5 years I really got familiar with the operating system
-and even though there were never the great console tools available out of the box, most of the applications available
+and even though there were not all the great console tools available out of the box, most of the applications available
 for the Mac had evolved to be not so dramatically feature-less like a few years ago.
 And I did not really work on the MacBook at that time anymore. The last year in that job I worked at customer sides, so I
 often had to use their hardware or I just needed the Terminal application of OS X to get to work.
@@ -133,7 +134,6 @@ Today I removed all of my TimeCapsule backups on the NAS. Good bye, Apple, I won
 [^2]: I downloaded the whole sources tarballs of Gnome v1.0 back in 1999, which
 made my parents think about spending the rent for me living at a students home
 in college instead of having me around and paying for the internet bills...
-
 [^3]: I never got used to terminal web browsers like lynx, w3m or elinks though.
 [^4]: Mac OS X 10.2 "Jaguar"
 [^5]: NetBSD was the only Unix/Linux operation system with serious support for Power-PC.
