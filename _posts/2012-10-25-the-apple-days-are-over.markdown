@@ -1,6 +1,7 @@
 ---
 title: The Apple Days are over
 layout: post
+comments: true
 ---
 
 {{ page.title }}
