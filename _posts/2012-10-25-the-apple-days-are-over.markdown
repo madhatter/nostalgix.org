@@ -12,7 +12,7 @@ I originally began this post on March, 19th and never finished it.
 
 The reason was that I got lost in a long story about when I started with Linux, moved to Unix, ended up with Apple
 and then finally found my way back to Linux... 
-Today I finished that post to get it out of my mind. It still is that long storu though. But who knows if there isn't
+Today I finished that post to get it out of my mind. It still is that long story though. But who knows if there isn't
 somebody who is interested in it. 
 
 tl;dr
