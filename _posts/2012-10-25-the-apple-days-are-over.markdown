@@ -130,7 +130,7 @@ But that changed soon and I moved from Mint to Arch. Because it's cooler, you kn
 again, I came across more and more stuff I wanted to test myself and I had to admit that Ubuntu/Mint still is limited when it comes to
 up to date software[^8] and I don't want to install to much manually. Except for vim.
 
-Today I removed all of my TimeCapsule backups on the NAS. Good bye, Apple, I won't come back.
+Today I removed all of my TimeMachine backups on the NAS. Good bye, Apple, I won't come back.
 
 
 [^2]: I downloaded the whole sources tarballs of Gnome v1.0 back in 1999, which
