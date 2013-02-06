@@ -6,6 +6,7 @@ tags:
 - archlinux
 - linux
 - powermanagement
+comments: true
 ---
 
 {{ page.title }}

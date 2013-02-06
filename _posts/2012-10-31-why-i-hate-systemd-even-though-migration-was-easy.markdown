@@ -5,6 +5,7 @@ tags:
 - archlinux
 - personal
 - systemd
+comments: true
 ---
 
 {{ page.title }}

@@ -21,8 +21,8 @@ end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  sh 'rsync -rtzh --progress --delete _site/ deployer@nostalgix.org:/var/customers/webs/arvid/www/'
-  Rake::Task[":ping"].invoke
+  sh 'rsync -rtzhO --progress --delete _site/ deployer@nostalgix.org:/var/customers/webs/arvid/www/'
+  Rake::Task["sitemap:ping"].invoke
 end
 
 desc 'Build and deploy locally'
@@ -30,15 +30,17 @@ task :local => :build do
   sh 'rsync -rtzh --progress --delete  _site/ /usr/share/nginx/html/blog/'
 end
 
-desc 'Notify Google of the new sitemap'
-task :ping do
-  require 'net/http'
-  require 'uri'
-  Net::HTTP.get(
-      'www.google.com',
-      '/webmasters/tools/ping?sitemap=' +
-      URI.escape('http://nostalgix.org/sitemap.xml')
-  )
+namespace :sitemap do
+  desc 'Notify Google of the new sitemap'
+  task :ping do
+    require 'net/http'
+    require 'uri'
+    Net::HTTP.get(
+        'www.google.com',
+        '/webmasters/tools/ping?sitemap=' +
+        URI.escape('http://nostalgix.org/sitemap.xml')
+    )
+  end
 end
 
 def jekyll(opts = '')
