@@ -82,6 +82,18 @@ For now I am very happy with dwm. But I am pretty sure it won't be the last
 windowmanager I install. What is it about this *Unity* everbody is talking about
 lately...?
 
+**Update**  
+I almost forgot to list the patches I have applied at the moment:  
+* statuscolors
+* pertag
+* scratchpad-stay
+* cflags
+* single_window_no_border
+* centered-floating
+* save_floats
+
+More information on those patches can be found on [dwm's homepage](http://dwm.suckless.org/patches/).
+
 [^1]: I don't know for sure, but I think I even had ratpoison running for a few
 days back in 2002. But I think I haven't been ready for a tiling windowmanager
 back then.
