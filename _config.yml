@@ -1,3 +1,4 @@
+baseurl: "http://nostalgix.org"
 exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 #markdown: rdiscount

@@ -27,7 +27,6 @@ module Jekyll
     end
   end
 
-
   # Sub-class Jekyll::StaticFile to allow recovery from unimportant exception
   # when writing the sitemap file.
   class StaticSitemapFile < StaticFile
@@ -84,8 +83,7 @@ module Jekyll
         path = page.subfolder + '/' + page.name
 
         # Skip files that don't exist yet (e.g. paginator pages)
-        next unless FileTest.exist?(path)
-
+        next unless FileTest.exist?(site.source + path)
         mod_date = File.mtime(site.source + path)
 
         # Use the user-specified permalink if one is given.
@@ -105,14 +103,27 @@ module Jekyll
         result += entry(path, mod_date, get_attrs(page), site) unless path =~ /error/
       }
 
-      # Next, find all the posts.
-      posts = site.site_payload['site']['posts']
-      for post in posts do
+      site.posts.each do |post|
+        path = site.source + '/_posts/' + post.name
+        
+        # Skip files that don't exist yet (e.g. paginator pages)
+        next unless FileTest.exist?(path)
+        mod_date = File.mtime(path)
+
         url     = post.url
         url     = '/' + url unless url =~ /^\//
         url     = url[0..-11] if url=~/\/index.html$/
-        result += entry(url, post.date, get_attrs(post), site)
+        result += entry(url, mod_date, get_attrs(post), site)
       end
+
+      # Next, find all the posts.
+      #posts = site.site_payload['site']['posts']
+      #for post in posts do
+      #  url     = post.url
+      #  url     = '/' + url unless url =~ /^\//
+      #  url     = url[0..-11] if url=~/\/index.html$/
+      #  result += entry(url, post.date, get_attrs(post), site)
+      #end
 
       result
     end
