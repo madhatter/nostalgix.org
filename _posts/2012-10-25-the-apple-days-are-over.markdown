@@ -134,12 +134,18 @@ Today I removed all of my TimeMachine backups on the NAS. Good bye, Apple, I won
 
 
 [^2]: I downloaded the whole sources tarballs of Gnome v1.0 back in 1999, which
-made my parents think about spending the rent for me living at a students home
-in college instead of having me around and paying for the internet bills...
+    made my parents think about spending the rent for me living at a students home
+    in college instead of having me around and paying for the internet bills...
+
 [^3]: I never got used to terminal web browsers like lynx, w3m or elinks though.
+
 [^4]: Mac OS X 10.2 "Jaguar"
+
 [^5]: NetBSD was the only Unix/Linux operation system with serious support for Power-PC.
+
 [^6]: I studied half-time back then and was allowed to use the iBook outside the office, too. It was nice to always carry
-it around. But I have to admit that using Eclipse on 1024x768 was a pain. More pain than Eclipse is by itself.
+    it around. But I have to admit that using Eclipse on 1024x768 was a pain. More pain than Eclipse is by itself.
+
 [^7]: I never forgot about the comfort of a tiling windowmanager since I used Xmonad on the Thinkpad for a few weeks.
+
 [^8]: Not to speak about removing Sun Java (Oracle, even) from the repositories and crap like that

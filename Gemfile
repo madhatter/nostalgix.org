@@ -1,4 +1,4 @@
 source :rubygems
 
-gem "jekyll", "~>0.11.2"
-gem "rdiscount", "~>1.6.8"
+gem "jekyll", "~>0.12.0"
+gem "kramdown", "~>0.13.4"

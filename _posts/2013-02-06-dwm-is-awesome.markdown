@@ -84,6 +84,7 @@ lately...?
 
 **Update**  
 I almost forgot to list the patches I have applied at the moment:  
+
 * statuscolors
 * pertag
 * scratchpad-stay
@@ -95,13 +96,16 @@ I almost forgot to list the patches I have applied at the moment:
 More information on those patches can be found on [dwm's homepage](http://dwm.suckless.org/patches/).
 
 [^1]: I don't know for sure, but I think I even had ratpoison running for a few
-days back in 2002. But I think I haven't been ready for a tiling windowmanager
-back then.
+    days back in 2002. But I think I haven't been ready for a tiling windowmanager
+    back then.
+
 [^2]: I used wmfs2 a few months ago for a week or so. But compared to awesome (at
-that time) I missed a few things and found it too minimalistic.
+    that time) I missed a few things and found it too minimalistic.
+
 [^3]: The first time I came across dwm must have been when I was looking for
-[dwb](http://portix.bitbucket.org/dwb/) some time ago. A nice browser you should
-take a look at if you haven't already.
+    [dwb](http://portix.bitbucket.org/dwb/) some time ago. A nice browser you should
+    take a look at if you haven't already.
+
 [^4]: For more information on how to install dwm via the Arch Build System take
-a sharp look at the [wiki](https://wiki.archlinux.org/index.php/Dwm).
+    a sharp look at the [wiki](https://wiki.archlinux.org/index.php/Dwm).
 

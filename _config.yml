@@ -1,4 +1,4 @@
 exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
-markdown: maruku
+markdown: kramdown
 #markdown: rdiscount
 pygments: true
