@@ -183,10 +183,6 @@ ul.posts {
      padding: 0 .2em;
    }  .
    
-   /* #post pre code {
-      border: none;
-    }
-	*/
   /* terminal */
 
   #post pre.terminal {
@@ -197,6 +193,11 @@ ul.posts {
 
   #post pre.terminal code {
     background-color: #333;
+  }
+
+  /* footnotes */
+  #post div.footnotes {
+	  font-size: 70%;
   }
 
 #related {
