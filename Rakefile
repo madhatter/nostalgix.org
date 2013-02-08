@@ -35,11 +35,18 @@ namespace :sitemap do
   task :ping do
     require 'net/http'
     require 'uri'
-    Net::HTTP.get(
-        'www.google.com',
-        '/webmasters/tools/ping?sitemap=' +
-        URI.escape('http://nostalgix.org/sitemap.xml')
-    )
+    require "net/http"
+    uri = "http://nostalgix.org"
+
+    params = "/ping/?title=&blogurl=#{URI.escape(uri)}&rssurl=&chk_weblogscom=on&chk_blogs=on&chk_technorati=on&chk_feedburner=on&chk_syndic8=on&chk_newsgator=on&chk_myyahoo=on&chk_pubsubcom=on&chk_blogdigger=on&chk_blogstreet=on&chk_moreover=on&chk_weblogalot=on&chk_icerocket=on&chk_newsisfree=on&chk_topicexchange=on"
+    puts "pinging pingomatic"
+    Net::HTTP.get("pingomatic.com", params)
+
+    puts "pinging google"
+    Net::HTTP.get("www.google.com" , "/webmasters/tools/ping?sitemap=" + URI.escape(uri+"/sitemap.xml"))
+
+    puts "pinging feedburner"
+    Net::HTTP.get("feedburner.google.com", "/fb/a/pingSubmit?bloglink=#{URI.escape(uri)}")
   end
 end
 
