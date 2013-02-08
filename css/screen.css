@@ -156,8 +156,9 @@ ul.posts {
 
   #post pre {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: #202020;
     padding: 0 .4em;
+	margin: 0 .2em;
   }
 
   #post ul,
@@ -165,17 +166,27 @@ ul.posts {
     margin-left: 1.35em;
   }
 
+  
+
   #post code {
     border: 1px solid #ddd;
+    /*background-color: #202020;*/
     background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
   }
 
-    #post pre code {
+  #post pre code {
+     border: none;
+     background-color: #202020;
+     font-size: 85%;
+     padding: 0 .2em;
+   }  .
+   
+   /* #post pre code {
       border: none;
     }
-
+	*/
   /* terminal */
 
   #post pre.terminal {
