@@ -61,7 +61,7 @@
 <script type="text/javascript">
 	/* Beginn des konfigurierbaren Parameterbereichs.
 	Um folgende Parameter zu verwenden, entfernen Sie bitte die f&uuml;hrenden zwei Schr&auml;gstriche (//) und erg&auml;nzen den Parameter um den gew&uuml;nschten Wert. */
-  {% if page.index?" %}
+  {% if page.is_index == true %}
 	var et_pagename = "__INDEX__{{ page.title }}";
   {% else %}
 	var et_pagename = "{{ page.title }}";
