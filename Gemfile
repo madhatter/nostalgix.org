@@ -1,4 +1,5 @@
 source :rubygems
 
-gem "jekyll", "~>0.12.0"
-gem "kramdown", "~>0.13.4"
+gem "jekyll", "2.4"
+gem "albino", "~>1.3"
+gem "kramdown"
