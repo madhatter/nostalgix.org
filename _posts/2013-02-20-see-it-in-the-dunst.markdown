@@ -43,8 +43,7 @@ workstation to check it out for this *project*. But it seemed that there were no
 scripts available that worked with `libnotify`[^4], so I wrote one myself. In
 Ruby, of course.
 
-<!-- <script src="https://gist.github.com/madhatter/4986925.js"></script> -->
-{% render_gist https://gist.github.com/raw/madhatter/4986925/1898b15049f2787250f5892693eb5f1d28e04799/notify.rb RubyLexer %}
+{% render_gist https://gist.githubusercontent.com/madhatter/4986925/raw/1898b15049f2787250f5892693eb5f1d28e04799/notify.rb ruby %}
 
 The script does nothing special, but notifies me about mentions of my nickname
 in a channel or a query. And it ignores everything from my nick, because first I

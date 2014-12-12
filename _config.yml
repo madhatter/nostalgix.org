@@ -4,3 +4,4 @@ exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 #markdown: rdiscount
 highlighter: pygments
+github_username: madhatter
