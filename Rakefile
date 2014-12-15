@@ -1,14 +1,14 @@
 begin
-    require 'rubygems'
-      require 'bundler'
+  require 'rubygems'
+  require 'bundler'
 rescue LoadError
-    raise "Could not load the bundler gem. Install it with `gem install bundler`."
+  raise "Could not load the bundler gem. Install it with `gem install bundler`."
 end
 
 begin
-    Bundler.setup
+  Bundler.setup
 rescue Bundler::GemNotFound
-    raise RuntimeError, "Bundler couldn't find some gems. Did you run `bundle install`?"
+  raise RuntimeError, "Bundler couldn't find some gems. Did you run `bundle install`?"
 end
 
 task :default => :build
@@ -51,7 +51,7 @@ namespace :sitemap do
 end
 
 def jekyll(opts = '')
-    sh 'rm -rf _site'
-      sh 'jekyll build' + opts
+  sh 'rm -rf _site'
+  sh 'jekyll build' + opts
 end
 
