@@ -54,4 +54,3 @@ def jekyll(opts = '')
   sh 'rm -rf _site'
   sh 'jekyll build' + opts
 end
-
