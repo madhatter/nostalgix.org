@@ -5,7 +5,6 @@ rescue LoadError
   raise "Could not load the bundler gem. Install it with `gem install bundler`."
 end
 
-
 begin
   Bundler.setup
 rescue Bundler::GemNotFound
