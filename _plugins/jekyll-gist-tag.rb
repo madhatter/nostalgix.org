@@ -7,6 +7,7 @@ module Jekyll
     def initialize(tag_name, params, tokens)
       super
       
+      $stderr.puts "It gets called"
       url, specified_language = params.split(' ')
 
       if %r|https://gist.githubusercontent.com/.*/(.*)/raw/(.*)/(.*\.([a-zA-Z]+))| =~ url
