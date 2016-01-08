@@ -19,6 +19,11 @@ task :build do
   #Rake::Task["sitemap:build"].invoke
 end
 
+desc 'Build site with Jekyll local with drafts'
+task :build_local do
+  jekyll '--drafts'
+end
+
 desc 'Build and deploy'
 task :deploy => :build do
   sh 'rsync -rtzhO --progress --delete _site/ deployer@nostalgix.org:/var/customers/webs/arvid/www/'
@@ -26,7 +31,7 @@ task :deploy => :build do
 end
 
 desc 'Build and deploy locally'
-task :local => :build do
+task :local => :build_local do
   sh 'rsync -rtzh --progress --delete  _site/ /usr/share/nginx/html/blog/'
 end
 
@@ -52,6 +57,6 @@ end
 
 def jekyll(opts = '')
   sh 'rm -rf _site'
-  sh 'jekyll build' + opts
+  sh 'jekyll build ' + opts
 end
 
