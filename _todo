@@ -1,0 +1,2 @@
+* Update rss.xml to handle german and english posts different
+* fix the related posts query to use the correct lang and watch the tags
