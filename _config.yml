@@ -1,4 +1,4 @@
-baseurl: "http://nostalgix.org"
+#baseurl: "http://nostalgix.org"
 exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 #markdown: maruku
 markdown: kramdown
