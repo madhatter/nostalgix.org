@@ -1,4 +1,6 @@
 require 'open-uri'
+require 'openssl'
+require 'net/https'
 require 'pygments'
 
 module Jekyll
@@ -30,7 +32,6 @@ module Jekyll
     end
 
     def get_gist_contents(gist,uuid,file,user)
-      
       # https://gist.githubusercontent.com/edelabar/885585/raw/97636729211894478563debbe776c4a69bb19fce/in-beginning-there-was-doctype.fifth.html      
       gist_url = "https://gist.githubusercontent.com/#{user}/#{gist}/raw/#{uuid}/#{file}"
       
