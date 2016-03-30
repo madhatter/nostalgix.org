@@ -50,6 +50,9 @@ namespace :sitemap do
     puts "pinging google"
     Net::HTTP.get("www.google.com" , "/webmasters/tools/ping?sitemap=" + URI.escape(uri+"/sitemap.xml"))
 
+    puts "pinging bing"
+    Net::HTTP.get("www.bing.com" , "/ping.aspx?siteMap=" + URI.escape(uri+"/sitemap.xml"))
+
     puts "pinging feedburner"
     Net::HTTP.get("feedburner.google.com", "/fb/a/pingSubmit?bloglink=#{URI.escape(uri)}")
   end
