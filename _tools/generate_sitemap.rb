@@ -15,6 +15,7 @@
 # site, and generate an entry in sitemap.xml for each one.
 
 require 'pathname'
+require 'jekyll'
 
 module Jekyll
 
@@ -63,6 +64,9 @@ module Jekyll
 
       # Add a static file entry for the zip file, otherwise Site::cleanup will remove it.
       site.static_files << Jekyll::StaticSitemapFile.new(site, site.dest, '/', 'sitemap.xml')
+      site.keep_files << 'sitemap.xml'
+      p site.keep_files
+      #raise
     end
 
     private
@@ -103,8 +107,10 @@ module Jekyll
         result += entry(path, mod_date, get_attrs(page), site) unless path =~ /error/
       }
 
-      site.posts.each do |post|
-        path = site.source + '/_posts/' + post.name
+      site.posts.docs.each do |post|
+        #puts "MM: #{post.methods}"
+        puts "MM: #{post.basename}"
+        path = site.source + '/_posts/' + post.basename
         
         # Skip files that don't exist yet (e.g. paginator pages)
         next unless FileTest.exist?(path)

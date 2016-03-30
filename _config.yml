@@ -5,3 +5,4 @@ markdown: kramdown
 #markdown: rdiscount
 highlighter: pygments
 github_username: madhatter
+gems: ['jekyll-sitemap']
