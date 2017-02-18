@@ -32,7 +32,7 @@ end
 
 desc 'Build and deploy locally'
 task :local => :build_local do
-  sh 'rsync -rtzh --progress --delete  _site/ /usr/share/nginx/html/blog/'
+  sh 'rsync -rtzh --progress --delete  _site/ /usr/share/webapps/blog/'
 end
 
 namespace :sitemap do
