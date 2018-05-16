@@ -12,11 +12,12 @@ comments: true
 ----------------
 ----------------
 
-The DSGVO is coming. The internet will stop to exist. At least the internet we
-knew here in Germany. All other european countries were able to read the paper
-in time to take care of those changes. Germany didn't and now we have to make
-sure that no lawyer will sue us for storing cookies on your computer, to track
-your clicks on our sites and try to figure out what might be of most interest.
+The [DSGVO][ds] ([GDPR][gd]) is coming. The internet will stop to exist. At least the
+internet we knew here in Germany. All other european countries were able to read
+the paper in time to take care of those changes. Germany didn't and now we have
+to make sure that no lawyer will sue us for storing cookies on your computer, to
+track your clicks on our sites and try to figure out what might be of most
+interest.
 
 To make sure that I don't have to spent the money I save for my kids' education
 in their future, I removed everything that stores anything.
@@ -34,3 +35,5 @@ attack I renew the ssl certificate every now and then. If you would send some
 information/data to my websites it would be encrypted, too. But you don't need
 to, because I don't care. And I don't save any of it.
 
+[ds]: https://dsgvo-gesetz.de/ "Datenschutz-Grundverordnung"
+[gd]: https://www.eugdpr.org/ "The EU General Data Protection Regulation"
