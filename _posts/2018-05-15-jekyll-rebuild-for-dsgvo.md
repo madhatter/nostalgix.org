@@ -28,12 +28,16 @@ would ever return one day. As I don't write something new here, I don't see the
 point in doing so any longer anyway.
 
 The webserver running this site had an access log where I stored your ip
-addresses. I don't do this anymore. For what?
+addresses. I don't do this anymore. What for?
 
 But to make sure that my static sites are not changed by a man-in-the-middle
 attack I renew the ssl certificate every now and then. If you would send some
-information/data to my websites it would be encrypted, too. But you don't need
-to, because I don't care. And I don't save any of it.
+information/data to my websites it would be encrypted, too. But you can't,
+because I don't care. And I don't save any of it.
+
+So, let's make this clear one last time: this is a private and personal website
+that does not make any profit at all out of it and which does not store any data
+of it's visitors and readers.
 
 [ds]: https://dsgvo-gesetz.de/ "Datenschutz-Grundverordnung"
 [gd]: https://www.eugdpr.org/ "The EU General Data Protection Regulation"
