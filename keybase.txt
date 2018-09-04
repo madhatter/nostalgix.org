@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/nostalgix
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nostalgix.org
+  * I am nostalgix (https://keybase.io/nostalgix) on keybase.
+  * I have a public key with fingerprint 8D7A EBBD 572C 7749 1AE9  844A 7FE2 4624 1294 2E7E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012059c601a48037a585ded860d6e069d4e2b6a686f72bdf36098cafe0c74f06c7c90a",
+      "fingerprint": "8d7aebbd572c77491ae9844a7fe2462412942e7e",
+      "host": "keybase.io",
+      "key_id": "7fe2462412942e7e",
+      "kid": "0101ed46d6e3039f559d11da5dd3fdc46f8de1829faef99887e62efc8df776c4044c0a",
+      "uid": "083d98bcf13dc2ec7cfae0c38b7ce919",
+      "username": "nostalgix"
+    },
+    "service": {
+      "hostname": "nostalgix.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1536041698,
+  "expire_in": 157680000,
+  "prev": "2a9b306dd0262dba90c78bed5e141a7893f2ece5ebc80cdd1b923e0f34c98dfd",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUl9sFEUcvqtXORpNeDC+kALdKGlMLbOzs7MzpxBjQjCakiZt8KGaY3bmt9e1
+Zfdu72ippQH5l1ChOR8w9oXQ2GCjRiQtFQThAQokDbQxJJjKqdAHNKASrY3RYpyt
+9sU4L5P5zfd9832/+ZUffySRTjbtqh+69ceXF5OTP7iJtgHjl17DDVWPkek1OmBx
+g04FxVK2w1dGxkAmRjaXFJmCMGQ5wma2AsUoUhQQ5YoAdqmgjHoOdpVnUcSZFB4g
+6RAPUelIjoTRYHh+kIMoH/lBScsy5QhwXWU7WDoO4aYAzggRjgeYUExMzAkGBzSx
+PSzGDG3OFUVo9ENd04fsor3/wS/5RiYoQrVLC1ncs22uTFMJWynLU5JQjykwGeae
+AI9zxhygGDzJlOc4VBJEiFz0vf0fOWYpzlzpmZaSGHQqzUPSYq4jgZs8BhYhCsQ2
+0OhAWxadOX+H0ddg6HKXLyHubBzlv5DGMMppdj4KS6EMO/VVe6mUL2ZiaqknH2O7
+wc3+q5J1/UDpTmpGF0RFPwyMjKmRsuTHsqat+09MylmDATvyfgRZP0bYDmVIr/gd
+6NKSWHDXakNUKYQpVq7g+r+YC8oGk5jCYdzydEywwZUMSaVMl2MLkGcRyXWPlBEH
+KwShkcFUGxU5LVr0c4EobY/A6Ks5mLRSiWQ6UftkXerZ80fvVd4tvzg5fObu0vhV
+V8Wzl6hZvmKpsumndOKdqXOvt91WTT1nm787Nbjq0isnXhgM61IPN76xEw/lDz3s
+/qbw68yro+MpfOV6ZeLTZzYcO3g4Nz/17QNxoGpv+uJgy2er+Udf7O4fWJYu9F5o
+fmp9fYc/NvLj6c13JptPzlSm6q7V7+7rnx85/teZrQOzh9auGXu+9sHo1DY/3LcK
+5dZtqFkxumchs3N27eUndo2tXE0PF9o/aXzrZOVo7W9H9vy+8OfN7998eWDh53LT
+yNOpodEjqffeH28db5mr2pJ8u/XG5eq9LdH+7q/KhWPBh1fnb/X13/l6y2PVqYnW
+1xb859Zf77o293l67qXpR8ud0Uh5emZ24uOt0/eHPzh9fPjcgcTZ85XN8m8=
+=x/tI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nostalgix
+
+==================================================================
+
