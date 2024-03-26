@@ -16,7 +16,6 @@ task :default => :build
 desc 'Build site with Jekyll'
 task :build do
   jekyll
-  #Rake::Task["sitemap:build"].invoke
 end
 
 desc 'Build site with Jekyll local with drafts'
@@ -26,35 +25,55 @@ end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  sh 'rsync -rtzhO --progress --delete _site/ deployer@nostalgix.org:/var/customers/webs/arvid/www/'
-  Rake::Task["sitemap:ping"].invoke
+  sh 'rsync -rtzhO --progress --delete _site/ deployer@nostalgix.org:/var/www/test'
+  Rake::Task[:notify].invoke
 end
 
 desc 'Build and deploy locally'
 task :local => :build_local do
-  sh 'sudo rsync -rtzh --progress --delete  _site/ /usr/share/webapps/blog/'
+  sh 'rsync -rtzh --progress --delete  _site/ $HOME/blog/'
 end
 
-namespace :sitemap do
-  desc 'Notify Google of the new sitemap'
-  task :ping do
-    require 'net/http'
-    require 'uri'
-    require "net/http"
-    uri = "http://nostalgix.org"
+task :notify => ["notify:google", "notify:bing", "notify:feedburner"]
+desc "Notify various services that the site has been updated"
+namespace :notify do
+  domain = "nostalgix.org"
+  sitemap = "/sitemap.xml"
 
-    params = "/ping/?title=&blogurl=#{URI.escape(uri)}&rssurl=&chk_weblogscom=on&chk_blogs=on&chk_technorati=on&chk_feedburner=on&chk_syndic8=on&chk_newsgator=on&chk_myyahoo=on&chk_pubsubcom=on&chk_blogdigger=on&chk_blogstreet=on&chk_moreover=on&chk_weblogalot=on&chk_icerocket=on&chk_newsisfree=on&chk_topicexchange=on"
-    puts "pinging pingomatic"
-    Net::HTTP.get("pingomatic.com", params)
+  desc "Notify Google of updated sitemap.xml"
+  task :google do
+    begin
+      require 'net/http'
+      require 'cgi'
+      puts "==> Notifying Google that #{domain} has been updated..."
+      Net::HTTP.get('www.google.com', '/ping?sitemap=' + CGI.escape("https://#{domain}#{sitemap}"))
+    rescue LoadError
+      puts "! Could not ping Google, because Net::HTTP or URI could not be found."
+    end
+  end
 
-    puts "pinging google"
-    Net::HTTP.get("www.google.com" , "/webmasters/tools/ping?sitemap=" + URI.escape(uri+"/sitemap.xml"))
+  desc "Notify Bing of updated sitemap.xml"
+  task :bing do
+    begin
+      require 'net/http'
+      require 'cgi'
+      puts "==> Notifying Bing that #{domain} has been updated..."
+      Net::HTTP.get('www.bing.com', '/indexnow?url=' + CGI.escape("https://#{domain}#{sitemap}"))
+    rescue LoadError
+      puts "! Could not ping Bing, because Net::HTTP or URI could not be found."
+    end
+  end
 
-    puts "pinging bing"
-    Net::HTTP.get("www.bing.com" , "/ping.aspx?siteMap=" + URI.escape(uri+"/sitemap.xml"))
-
-    puts "pinging feedburner"
-    Net::HTTP.get("feedburner.google.com", "/fb/a/pingSubmit?bloglink=#{URI.escape(uri)}")
+  desc "Notify Feedburner of updated sitemap.xml"
+  task :feedburner do
+    begin
+      require 'net/http'
+      require 'cgi'
+      puts "==> Notifying Feedburner that #{domain} has been updated..."
+      Net::HTTP.get('feedburner.google.com', '/fb/a/pingSubmit?bloglink=' + CGI.escape("https://#{domain}#{sitemap}"))
+    rescue LoadError
+      puts "! Could not ping Feedburner, because Net::HTTP or URI could not be found."
+    end
   end
 end
 

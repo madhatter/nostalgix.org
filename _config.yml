@@ -3,6 +3,7 @@ exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 #markdown: maruku
 markdown: kramdown
 #markdown: rdiscount
-highlighter: pygments
+highlighter: rouge
 github_username: madhatter
-gems: ['jekyll-sitemap']
+plugins: 
+  - 'jekyll-sitemap'

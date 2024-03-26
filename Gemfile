@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~>3.1"
+gem "jekyll", "~>4.3"
 gem "pygments.rb"
-gem "albino", "~>1.3"
 gem "kramdown"
 gem "rake"
 gem 'jekyll-sitemap'
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
