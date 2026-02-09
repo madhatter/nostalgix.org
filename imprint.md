@@ -9,8 +9,8 @@ Hosted by Arvid Warnecke
 
 **Contact**  
 Arvid Warnecke  
-Blankenseer Str. 33  
-23627 Groß Grönau  
+Mierendorffstr. 4
+23566 Lübeck
 Email: arvid (dot) warnecke (at) nostalgix (dot) org
 
 
