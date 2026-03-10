@@ -1,4 +1,6 @@
 #baseurl: "http://nostalgix.org"
+# Forces all posts to be generated under the /blog/ path
+permalink: /blog/:year/:month/:day/:title.html
 exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 #markdown: maruku
 markdown: kramdown
