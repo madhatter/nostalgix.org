@@ -1,28 +1,49 @@
----
-layout: default
-title: madhatter's delicatessen - Arvid Warnecke's personal page
-is_index: true
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Terminal Setup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-brand">
+        <a href="/">~/home</a>
+      </div>
 
-<div id="container">
-  <div id="left">
-    <h1>English Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-	  {% if post.lang != 'de' %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	  {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-  <div id="right">
-    <h1>German Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-	  {% if post.lang == 'de' %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	  {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/about">About</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="/blog">Blog</a>
+
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="/tech">Tech & Code</a></li>
+              <li class="dropdown-item">
+                <a href="/coffee">Coffee Brewers</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="/vinyl">Vinyl Collection</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <section class="hero-section">
+        <h1 class="prompt-text">user@host ~ $</h1>
+        <p class="intro-text">Welcome to my personal site.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built from scratch.</p>
+    </footer>
+  </body>
+</html>

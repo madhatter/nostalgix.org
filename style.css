@@ -1,0 +1,74 @@
+/* Base variables for a minimalist grayscale theme */
+:root {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f4f4f4;
+    --color-text-main: #111111;
+    --color-text-muted: #666666;
+    --color-border: #dddddd;
+    
+    --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-family-mono: "Courier New", Courier, monospace;
+    
+    --spacing-base: 1rem;
+    --spacing-large: 2rem;
+}
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    font-family: var(--font-family-base);
+    line-height: 1.6;
+    
+    /* Centers the content and ensures it doesn't get too wide for reading */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-large) var(--spacing-base);
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin-bottom: var(--spacing-base);
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+p {
+    margin-bottom: var(--spacing-base);
+}
+
+/* Code blocks and inline code */
+code, pre {
+    font-family: var(--font-family-mono);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: var(--spacing-base);
+    overflow-x: auto;
+}
+
+/* Links */
+a {
+    color: var(--color-text-main);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--color-text-muted);
+}
