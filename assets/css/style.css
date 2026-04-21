@@ -1,0 +1,184 @@
+/* Base variables for a minimalist grayscale theme */
+:root {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f4f4f4;
+    --color-text-main: #111111;
+    --color-text-muted: #666666;
+    --color-border: #dddddd;
+    
+    --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-family-mono: "Courier New", Courier, monospace;
+    
+    --spacing-base: 1rem;
+    --spacing-large: 2rem;
+}
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    font-family: var(--font-family-base);
+    line-height: 1.6;
+    
+    /* Centers the content and ensures it doesn't get too wide for reading */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-large) var(--spacing-base);
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin-bottom: var(--spacing-base);
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+p {
+    margin-bottom: var(--spacing-base);
+}
+
+/* Code blocks and inline code */
+code, pre {
+    font-family: var(--font-family-mono);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: var(--spacing-base);
+    overflow-x: auto;
+}
+
+/* Links */
+a {
+    color: var(--color-text-main);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--color-text-muted);
+}
+
+.content-wrapper {
+    /* Adds some breathing room between header and content */
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+}
+
+.hero-section {
+    /* Highlights the intro section like a terminal window */
+    margin-bottom: var(--spacing-large);
+    padding: var(--spacing-large);
+    background-color: var(--color-bg-secondary);
+    border: 1px dashed var(--color-border);
+    border-radius: 4px;
+}
+
+.prompt-text {
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Header and Navigation Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--spacing-base);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--spacing-large);
+}
+
+.site-brand a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--font-family-mono);
+}
+
+/* Reset default list styles for the navigation */
+.nav-list, .dropdown-menu {
+    list-style: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    display: flex; /* Places main nav items horizontally */
+    gap: var(--spacing-large);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-text-main);
+    display: block;
+    font-family: var(--font-family-mono);
+}
+
+.nav-item a:hover {
+    color: var(--color-text-muted);
+}
+
+/* Dropdown Logic */
+.has-dropdown {
+    /* Acts as the anchor point for the absolute positioned dropdown */
+    position: relative; 
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Take it out of the normal document flow */
+    top: 100%; /* Position it directly below the parent item */
+    left: 0;
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    min-width: 180px;
+    z-index: 10; /* Ensures the menu stays on top of other content */
+}
+
+/* Show the dropdown when hovering over the parent list item */
+.has-dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown-item a {
+    padding: 0.5rem var(--spacing-base);
+}
+
+.dropdown-item a:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+/* Footer Styles */
+.site-footer {
+    /* Visually separates the footer from the main content */
+    margin-top: calc(var(--spacing-large) * 2);
+    padding-top: var(--spacing-base);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--color-text-muted);
+}
+.site-footer a {
+    display: inline-block;
+    margin-right: 10px; /* Definierter Abstand */
+}
+
+.site-footer svg {
+    display: block; /* Entfernt den Inline-Whitespace */
+    vertical-align: middle;
+}
