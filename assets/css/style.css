@@ -182,3 +182,60 @@ a:hover {
     display: block; /* Entfernt den Inline-Whitespace */
     vertical-align: middle;
 }
+
+/* Post Lists (Startpage & Blog) */
+.recent-posts {
+    margin-top: var(--spacing-large);
+}
+
+.recent-posts h3 {
+    font-family: var(--font-family-mono);
+    color: var(--color-text-muted);
+    font-size: 1.1em;
+    margin-bottom: var(--spacing-base);
+}
+
+.post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post-item {
+    display: flex;
+    gap: var(--spacing-base);
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.post-date {
+    font-family: var(--font-family-mono);
+    color: var(--color-text-muted);
+    min-width: 100px; /* Aligns the titles nicely in a column */
+}
+
+.post-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.more-link-wrapper {
+    margin-top: var(--spacing-large);
+}
+
+.more-link {
+    font-family: var(--font-family-mono);
+    font-size: 0.9em;
+    color: var(--color-text-muted);
+    text-decoration: none;
+}
+
+.more-link:hover {
+    color: var(--color-text-main);
+}

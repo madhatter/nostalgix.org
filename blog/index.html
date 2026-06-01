@@ -1,28 +1,23 @@
 ---
 layout: default
-title: madhatter's delicatessen - Arvid Warnecke's personal page
-is_index: true
+title: Blog Archive
 ---
 
-<div id="container">
-  <div id="left">
-    <h1>English Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-	  {% if post.lang != 'de' %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	  {% endif %}
-      {% endfor %}
+<section class="recent-posts">
+    <h2 class="prompt-text">madhatter@nostalgix ~/blog $ ls -lt</h2>
+    <p class="intro-text">All my output, sorted by date.</p>
+    
+    <ul class="post-list" style="margin-top: var(--spacing-large);">
+        {% for post in site.posts %}
+            <li class="post-item">
+                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                <a href="{{ post.url }}" class="post-link">
+                    {% if post.lang == 'de' %}
+                        <span style="color: var(--color-text-muted); font-family: var(--font-family-mono); font-size: 0.9em;">[DE]</span>
+                    {% endif %}
+                    {{ post.title }}
+                </a>
+            </li>
+        {% endfor %}
     </ul>
-  </div>
-  <div id="right">
-    <h1>German Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-	  {% if post.lang == 'de' %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	  {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+</section>
