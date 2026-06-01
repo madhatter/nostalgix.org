@@ -33,4 +33,4 @@ jobs:
           REMOTE_USER: deployer
           TARGET: /var/www/test/
           SOURCE: _site/
-          ARGS: "-avz --delete"
+          ARGS: "-rlptzv --omit-dir-times --delete"
